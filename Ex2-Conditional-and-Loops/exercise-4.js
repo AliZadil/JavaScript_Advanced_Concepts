@@ -1,5 +1,6 @@
 function nicknameMap(persons) {
-  // ...
+  let result=persons.map(element=>element.name+" "+String(element.age));
+  return(result);
 }
 
 const persons = [
