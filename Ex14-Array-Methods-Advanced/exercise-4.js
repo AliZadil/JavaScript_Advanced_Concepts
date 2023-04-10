@@ -1,5 +1,5 @@
 function uncompletedNotes(notes) {
-  // ...
+  notes.forEach(note=>console.log(note.todos.filter(todo=>!todo.done)));
 }
 
 const notes = [
@@ -10,17 +10,17 @@ const notes = [
       {
         id: 1,
         name: "Push ups - 10 x 3",
-        done: false,
+        done: false
       },
       {
         id: 2,
         name: "Abdominals - 20 x 3",
-        done: true,
+        done: true
       },
       {
         id: 3,
         name: "Tapis Roulant - 15min",
-        done: true,
+        done: true
       },
     ],
   },
@@ -31,22 +31,22 @@ const notes = [
       {
         id: 1,
         name: "Learn HTML",
-        done: true,
+        done: true
       },
       {
         id: 2,
         name: "Learn CSS",
-        done: true,
+        done: true
       },
       {
         id: 3,
         name: "Learn JavaScript",
-        done: true,
+        done: true
       },
       {
         id: 4,
         name: "Learn Angular",
-        done: false,
+        done: false
       },
     ],
   },

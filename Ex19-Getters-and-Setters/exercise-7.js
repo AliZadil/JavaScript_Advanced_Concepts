@@ -1,5 +1,11 @@
 class Person {
-  // ...
+  constructor(firstName, lastName, age){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.fullName = get fullName() {
+      return `${this.firstName} ${this.lastName}`;
+    }
+  }
 }
 
 const person = new Person('Mario', 'Rossi', 25);
