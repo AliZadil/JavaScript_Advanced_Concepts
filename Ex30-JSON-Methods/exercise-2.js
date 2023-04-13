@@ -12,5 +12,5 @@ class Person {
 }
 
 const json = '{"id":1,"firstName":"Mario","lastName":"Rossi","age":25}';
-const developer = Person.fromJson(json);
+const developer = Person.toJson();
 console.log(developer);
