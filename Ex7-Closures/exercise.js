@@ -7,11 +7,11 @@ function sayHelloName(callback){
 function printName() {
     let helloName = "Hello John"
     function inner(){
-        return(helloName)
+        console.log(helloName);
     }
-    console.log(inner())
+    return inner;
 }
 
-sayHelloName(printName);
+sayHelloName(printName());
 
 
