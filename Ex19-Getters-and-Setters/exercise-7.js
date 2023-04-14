@@ -9,26 +9,35 @@ class Person {
   }
   set firstName(newFirst){
     if(newFirst !== String(newFirst)){
-      firstName = String(newFirst);
+      this.firstName = String(newFirst);
     }else{
-      firstName = newFirst;
+      this.firstName = newFirst;
     }
   }
   set lastName(newLast){
     if(newLast !== String(newLast)){
-      lastName = String(newLast);
+      this.lastName = String(newLast);
     }else{
-      lastName = newLast;
+      this.lastName = newLast;
     }
   }
   set age(newAge){
     if(newAge < 1){
-      age = 1;
+      this.age = 1;
     }else if (newAge > 110){
-      age = 110;
+      this.age = 110;
     }else {
-      age = newAge;
+      this.age = newAge;
     }
+  }
+  get firstName(){
+    return this.firstName;
+  }
+  get lastName(){
+    return this.lastName;
+  }
+  get age(){
+    return this.age;
   }
   get fullName(){
     return `${this.firstName} ${this.lastName}`;
