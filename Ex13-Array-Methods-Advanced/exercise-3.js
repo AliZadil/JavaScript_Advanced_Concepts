@@ -1,6 +1,11 @@
-function calculateAverageAge(persons) {
-  return Math.round((persons.map(person=>person.age).reduce((sum,val)=>sum+val,0))/(persons.length));
+// function calculateAverageAge(persons) {
+//   return Math.round((persons.map(person=>person.age).reduce((sum,val)=>sum+val))/(persons.length));
+// }
+
+function calculateAverageAge(arr) {
+  return Math.round((arr.reduce((sum,val)=>sum+val.age, 0))/arr.length);
 }
+
 
 const persons = [
   { name: 'Paul', age: 16 },
