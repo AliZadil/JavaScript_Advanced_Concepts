@@ -1,6 +1,9 @@
 function printAsncName(cb, str){
     setTimeout(()=>{
         cb();
-    }, 1000);
-    
+        setTimeout(() => {
+            console.log(str)
+        }, 1000)
+    }, 2000);    
 }
+// setTimeout seemed easier 
